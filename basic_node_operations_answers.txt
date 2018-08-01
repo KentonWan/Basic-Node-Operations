@@ -1,0 +1,64 @@
+1. 
+
+sort: This command will sort the designated file alphabetically starting from the most indented lines to the least and includes the blank lines as well
+
+
+
+
+
+
+
+
+      break;
+      break;
+      commandLibrary.cat(userInputArray.slice(1));
+      commandLibrary.echo(userInputArray.slice(1).join(" "))
+      done(data);
+      if (err) throw err;
+    case "cat":
+    case "echo":
+    const fileName = fullPath[0];
+    done(userInput);
+    fs.readFile(fileName, (err,data) => {
+    });
+  "cat": function(fullPath){
+  "echo": function(userInput){
+  const command = userInputArray[0];
+  const userInputArray = userInput.split(" ");
+  process.stdout.write('\nprompt > ');
+  process.stdout.write(output);
+  switch(command) {
+  }
+  }
+  },
+const commandLibrary = {
+const fs = require("fs");
+function done(output){
+function evaluateCmd(userInput){
+module.exports.commandLibrary = commandLibrary;
+module.exports.evaluateCmd = evaluateCmd;
+}
+}
+};
+
+wc: this command will count the number of lines, words and byte in a file. 
+
+38 67 779 command.js
+
+uniq: will sort through each line in the file and only return different lines, so if two consecutive lines are the same it will remove one.  
+
+The output of command.js looks the same as there were no consecutive duplicate lines.
+
+2. uniq command.js | wc
+The output was the same as if only performing the `wc` command which verifies no duplicate lines. Nothing was removed.  
+
+
+6. 
+function reverseString(inputString){
+  let inputArray = inputString.split(" ");
+  let outputArray = [];
+  inputArray.forEach((element) => {
+    outputArray.push(element.split("").reverse().join(""));
+  })
+  return outputArray.join(" ");
+}

@@ -7,6 +7,7 @@ function done(output){
 function errorHandler(input) {
   done(input + " is not a command")
 }
+
 function evaluateCmd(userInput){
 
   const userInputArray = userInput.split(" ");
